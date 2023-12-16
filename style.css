@@ -41,7 +41,7 @@ body {
 }
 
 .nav-bar nav ul li,
-.icon {
+.icon a{
   font-family: "Poppins";
   font-weight: 500;
   font-size: 30px;
@@ -104,7 +104,7 @@ body {
   color: #fff;
 }
 
-.nav-bar .nav-parent .icon i:not(:last-child) {
+.nav-bar .nav-parent .icon a:not(:last-child) {
   margin-right: 22px;
 }
 
@@ -828,9 +828,10 @@ footer ul li {
     font-size: 42px;
   }
 
-  .footer-icon {
+  .footer-icon a{
     font-weight: 600;
     font-size: 42px;
+    color: #fff;
   }
 
   .footer-icon:not(:last-child) {
