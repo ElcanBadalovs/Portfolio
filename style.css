@@ -1,0 +1,839 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  scroll-snap-destination: 90% 90%;
+}
+
+body {
+  background-color: #0f1624;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #0f1624;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #13adc7 0%, #6978d1 66.67%, #945dd6 100%);
+  border-radius: 10px;
+}
+
+.nav-bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 5px;
+  margin-bottom: 40px;
+}
+
+.nav-bar nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.nav-bar nav ul li,
+.icon {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 30px;
+  color: #fff;
+}
+
+.nav-bar .icon {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-bar .nav-parent {
+  display: none;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  background-color: #0f1624;
+  box-shadow: rgba(255, 255, 255, 0.405) 0px 4px 6px;
+  top: 0px;
+  right: 0px;
+  flex-direction: column;
+  justify-content: space-evenly;
+  transition: 0.6 ease-in-out;
+}
+
+.nav-bar .nav-parent .xmark-block {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  padding-top: 10px;
+  padding-right: 20px;
+  margin-bottom: 22px;
+}
+
+.nav-bar .nav-parent .xmark-block .fa-xmark {
+  color: #fff;
+  font-size: 52px;
+}
+
+.nav-bar .nav-parent nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.nav-bar .nav-parent nav ul li {
+  margin-bottom: 55px;
+}
+
+.nav-bar .nav-parent nav ul li:hover {
+  border-bottom: 2px solid #945dd6;
+  transition: 7s ease-in-out;
+  transform: scaleX() 2ms;
+}
+
+.nav-bar nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-bar .nav-parent .icon i:not(:last-child) {
+  margin-right: 22px;
+}
+
+.logo {
+  flex-grow: 1;
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 40px;
+  color: #fff;
+  margin-left: 35px;
+}
+
+.bar-icon {
+  flex-grow: 2;
+  display: flex;
+  justify-content: end;
+  padding-right: 10px;
+  color: #fff;
+  font-size: 30px;
+}
+
+/* Hero css */
+
+.hero {
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+.hero h1 {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 14px;
+  margin-left: 22px;
+}
+
+.hero p {
+  width: 309px;
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 16px;
+  color: #bcbcbc;
+  margin-bottom: 14px;
+  margin-left: 22px;
+}
+
+.hero a {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 18px;
+  color: #fff;
+  background: linear-gradient(270deg, #13adc7 0%, #6978d1 66.67%, #945dd6 100%);
+  border-radius: 83px;
+  padding: 9px 24px;
+  text-decoration: none;
+  margin-left: 22px;
+}
+
+/* Projects */
+
+.projects {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  margin-bottom: 100px;
+}
+
+.projects h1 {
+  margin-left: 92px;
+  text-align: left;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 34px;
+  margin-bottom: 33px;
+  color: #fff;
+}
+
+.projects .projects-container1 {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.projects .projects-container1 .projects-blok {
+  width: 250px;
+  background: #0f1624;
+  box-shadow: 0px 0px 12px #ffffff;
+  border-radius: 50px 0px;
+  padding: 25px 25px 45px 25px;
+  margin-bottom: 44px;
+}
+
+.projects .projects-container1 .projects-blok img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 25px;
+}
+
+.projects .projects-container1 .projects-blok h3 {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 24px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 14px;
+}
+
+.projects .projects-container1 .projects-blok .line {
+  width: 180px;
+  height: 1px;
+  background: linear-gradient(270deg, #13adc7 0%, #6978d1 66.67%, #945dd6 100%);
+  border-radius: 83px;
+  margin: auto;
+  margin-bottom: 24px;
+}
+
+.projects .projects-container1 .projects-blok p {
+  width: 200px;
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 13px;
+  color: #fff;
+  margin-bottom: 34px;
+}
+
+.projects .projects-container1 .projects-blok a {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 16px;
+  color: #fff;
+  background: linear-gradient(270deg, #13adc7 0%, #6978d1 66.67%, #945dd6 100%);
+  border-radius: 83px;
+  padding: 9px 24px;
+  text-decoration: none;
+  text-align: left;
+}
+
+/* Techonologies css */
+
+.technologies {
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+.technologies h3 {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 24px;
+  color: #fff;
+  text-align: left;
+  margin-bottom: 24px;
+  margin-left: 32px;
+}
+
+.technologies .skills {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.technologies .skills .skills-element {
+  width: 300px;
+}
+
+.technologies .skills .skills-text {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.technologies .skills .skills-text p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  margin-left: 15px;
+  color: #fff;
+}
+
+.technologies .skills .skills-text p:last-child {
+  font-size: 12px;
+  margin-left: 0px;
+  margin-right: 22px;
+}
+
+.technologies .skills .skills-element .color1 {
+  width: 100%;
+  height: 15px;
+  background: #162950;
+  border-radius: 83px;
+}
+
+.technologies .skills .skills-element .color1 div {
+  height: 100%;
+  background: linear-gradient(270deg, #13adc7 0%, #6978d1 66.67%, #945dd6 100%);
+  border-radius: 83px;
+}
+
+.technologies .skills .skills-element:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.technologies .skills .skills-element .html {
+  width: 80%;
+}
+
+.technologies .skills .skills-element .css {
+  width: 80%;
+}
+.technologies .skills .skills-element .bootstrap {
+  width: 80%;
+}
+
+.technologies .skills .skills-element .js {
+  width: 60%;
+}
+
+.technologies .skills .skills-element .React {
+  width: 50%;
+}
+
+.technologies .skills .skills-element .Python {
+  width: 10%;
+}
+
+/* Additional Css */
+
+.additional-skills {
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+.additional-skills h3 {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 22px;
+  margin-left: 32px;
+}
+
+.additional-skills .list {
+  display: flex;
+  justify-content: center;
+}
+
+.additional-skills .list1 ul li {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 18px;
+  color: #fff;
+}
+
+.additional-skills .list1:first-child {
+  margin-right: 62px;
+}
+
+/* About Me Css */
+
+.about-me {
+  width: 100%;
+  margin-bottom: 100px;
+}
+
+.about-me h3 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  margin-left: 32px;
+  color: #fff;
+  margin-bottom: 17px;
+}
+
+.about-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.about-container .about-text {
+  width: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-container .about-text h4 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+
+.about-container .about-text .about-ellipse {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #fff;
+  margin-bottom: 15px;
+}
+
+.about-container .about-text p {
+  text-align: center;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  color: #fff;
+}
+
+.about-container .about-text:not(:last-child) {
+  margin-right: 23px;
+}
+
+.about-container .about-line {
+  position: absolute;
+  top: 56px;
+  width: 200px;
+  height: 10px;
+  background-color: #fff;
+}
+
+/* Footer Css */
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer ul li {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.footer-icon {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 20px;
+}
+
+@media (min-width: 760px) {
+  * {
+    font-weight: 500;
+  }
+
+  .logo {
+    font-size: 50;
+  }
+  .bar-icon {
+    padding-right: 50px;
+    font-size: 45px;
+  }
+
+  .hero h1 {
+    margin-left: 42px;
+    font-size: 44px;
+  }
+
+  .hero p {
+    width: 469px;
+    margin-left: 42px;
+    font-size: 26px;
+  }
+
+  .hero a {
+    margin-left: 42px;
+    font-size: 28px;
+  }
+
+  .projects h1 {
+    font-size: 50px;
+  }
+
+  .projects .projects-container1 .projects-blok {
+    width: 290px;
+  }
+
+  .projects .projects-container1 .projects-blok img {
+    width: 100%;
+  }
+
+  .projects .projects-container1 .projects-blok h3 {
+    font-size: 35px;
+  }
+
+  .projects .projects-container1 .projects-blok .line {
+    width: 100%;
+  }
+
+  .projects .projects-container1 .projects-blok p {
+    width: 240px;
+    font-size: 16px;
+  }
+
+  .projects .projects-container1 .projects-blok a {
+    width: 240px;
+    font-size: 22px;
+  }
+
+  .technologies h3 {
+    font-size: 44px;
+  }
+
+  .technologies .skills .skills-element {
+    width: 550px;
+  }
+
+  .technologies .skills .skills-text p {
+    font-size: 26px;
+  }
+
+  .technologies .skills .skills-text p:last-child {
+    font-size: 22px;
+  }
+
+  .technologies .skills .skills-element .color1 {
+    height: 22px;
+  }
+
+  .additional-skills h3 {
+    font-size: 40px;
+  }
+
+  .additional-skills .list1 ul li {
+    font-size: 30px;
+  }
+
+  .additional-skills .list1 {
+    margin-right: 82px;
+  }
+
+  .about-me h3 {
+    font-size: 46px;
+  }
+
+  .about-container .about-text {
+    width: 287px;
+  }
+
+  .about-container .about-text h4 {
+    font-size: 46px;
+  }
+
+  .about-container .about-text .about-ellipse {
+    width: 36px;
+    height: 36px;
+  }
+
+  .about-container .about-text p {
+    font-size: 24px;
+  }
+
+  .about-container .about-text:not(:last-child) {
+    margin-right: 43px;
+  }
+
+  .about-container .about-line {
+    top: 94px;
+    width: 300px;
+    height: 15px;
+  }
+
+  footer ul li {
+    font-size: 27px;
+  }
+
+  .footer-icon {
+    font-size: 33px;
+  }
+}
+
+@media (min-width: 1023px) {
+  .bar-icon {
+    display: none;
+  }
+
+  .nav-bar .nav-parent .xmark-block {
+    display: none;
+  }
+
+  .nav-bar .nav-parent {
+    display: flex;
+    flex-direction: initial;
+    position: static;
+    background: none;
+    width: initial;
+    height: initial;
+    box-shadow: none;
+  }
+
+  .nav-bar .nav-parent nav {
+    flex-grow: 2;
+    flex-direction: unset;
+  }
+
+  .nav-bar nav ul li,
+  .icon {
+    font-size: 27px;
+  }
+
+  .nav-bar {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 46px 0px;
+  }
+
+  .logo {
+    margin-left: 0px;
+    font-size: 30px;
+    flex-grow: 0;
+  }
+
+  .nav-bar .nav-parent nav ul {
+    display: flex;
+    flex-direction: unset;
+    justify-content: space-evenly;
+  }
+
+  .nav-bar .nav-parent nav ul li {
+    margin-right: 98px;
+    margin-bottom: initial;
+  }
+
+  .nav-bar .icon {
+    margin-bottom: initial;
+  }
+
+  .nav-bar .icon i:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  .hero {
+    margin-bottom: 255px;
+  }
+
+  .hero h1 {
+    margin-left: 192px;
+    font-weight: 600;
+    font-size: 64px;
+    margin-bottom: 34px;
+  }
+
+  .hero p {
+    width: 989px;
+    height: 162px;
+    font-weight: 600;
+    font-size: 36px;
+    margin-left: 192px;
+    margin-bottom: 63px;
+  }
+
+  .hero a {
+    font-weight: 600;
+    font-size: 28px;
+    padding: 19px 64px;
+    margin-left: 192px;
+  }
+
+  .projects h1 {
+    font-weight: 600;
+    font-size: 64px;
+    margin-left: 192px;
+  }
+
+  .projects .projects-container1 {
+    margin-bottom: 97px;
+  }
+
+  .projects .projects-container1 .projects-blok {
+    width: 550px;
+    height: 700px;
+  }
+
+  .projects .projects-container1 .projects-blok img {
+    width: 100%;
+    height: 266px;
+  }
+
+  .projects .projects-container1 .projects-blok h3 {
+    font-weight: 600;
+    font-size: 36px;
+    margin-bottom: 25px;
+  }
+
+  .projects .projects-container1 .projects-blok .line {
+    width: 300px;
+    height: 4px;
+    margin-bottom: 25px;
+  }
+
+  .projects .projects-container1 .projects-blok p {
+    width: 500px;
+    height: 168px;
+    font-weight: 600;
+    font-size: 28px;
+    margin-bottom: 40px;
+  }
+
+  .projects .projects-container1 .projects-blok a {
+    font-weight: 600;
+    font-size: 20px;
+    padding: 15px 52px;
+  }
+
+  .technologies h3 {
+    margin-left: 192px;
+    margin-bottom: 133px;
+    font-weight: 600;
+    font-size: 64px;
+  }
+
+  .technologies .skills .skills-text p {
+    font-weight: 600;
+    font-size: 36px;
+  }
+  .technologies .skills .skills-text p:last-child {
+    font-weight: 600;
+    font-size: 24px;
+  }
+
+  .technologies .skills .skills-element {
+    width: 1000px;
+    margin: auto;
+    margin-bottom: 54px;
+  }
+
+  .technologies .skills .skills-text p {
+    font-weight: 600;
+    font-size: 36px;
+  }
+
+  .technologies .skills .skills-text p:last-child {
+    font-weight: 600;
+    font-size: 24px;
+  }
+
+  .technologies .skills .skills-element .color1 {
+    height: 22px;
+  }
+
+  .additional-skills h3 {
+    font-weight: 600;
+    font-size: 48px;
+    margin-left: 192px;
+    margin-bottom: 82px;
+  }
+
+  .additional-skills .list1 ul li {
+    font-weight: 600;
+    font-size: 36px;
+  }
+
+  .additional-skills .list1:not(:last-child) {
+    margin-right: 192px;
+  }
+
+  .about-me h3 {
+    font-weight: 600;
+    font-size: 64px;
+    margin-left: 192px;
+    margin-bottom: 87px;
+  }
+
+  .about-container {
+    font-weight: 600;
+    font-size: 64px;
+  }
+
+  .about-container .about-text {
+    width: 347px;
+  }
+
+  .about-container .about-text:not(:last-child) {
+    margin-right: 190px;
+  }
+
+  .about-container .about-text h4 {
+    font-weight: 600;
+    font-size: 36px;
+  }
+
+  .about-container .about-text .about-ellipse {
+    width: 32px;
+    height: 32px;
+  }
+
+  .about-me .about-container .about-text p {
+    font-weight: 600;
+    font-size: 28px;
+  }
+
+  .about-container .about-line {
+    top: 79px;
+    width: 510px;
+    height: 12px;
+  }
+
+  footer ul li {
+    font-weight: 600;
+    font-size: 42px;
+  }
+
+  .footer-icon {
+    font-weight: 600;
+    font-size: 42px;
+  }
+
+  .footer-icon:not(:last-child) {
+    margin-right: 65px;
+  }
+}
